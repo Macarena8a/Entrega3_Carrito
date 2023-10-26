@@ -1,0 +1,111 @@
+
+:root{
+  --color-acento: rgb(220, 179, 174);
+  --color-acento-claro: #ee613033;
+  --color-texto: black;
+}
+
+body{
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(../img/fondo.png);
+
+}
+
+.Titulodiv{
+  background-color: white;
+  height: 100px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+h1, h2{
+  font-size: 30px;
+  text-align: center;
+  color:var(--color-acento)
+}
+h3, p{
+  margin: 5px;
+}
+
+.escondido{
+  display: none;
+}
+
+a{
+  background-color: unset;
+  border:unset;
+  cursor:pointer;
+  text-decoration: none;
+  transition: 200ms;
+  color: var(--color-texto);
+}
+
+button{
+  transition: 200ms;
+}
+
+a:hover:not(#cart), button:hover{
+  color: var(--color-acento);
+  background: white;
+  padding:10px;
+  border-radius: 40px;
+}
+
+/* Header */
+header{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
+  margin-bottom: 10px;
+  font-size: 2rem;
+  background-image: url(../img/fondo.png);  
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
+}
+
+#logo{
+  height: 110px;
+  margin: 10px;
+}
+
+header nav div{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header nav img{
+  height: 25px;
+}
+
+#cuenta-carrito{
+  position: absolute;
+  background-color: var(--color-acento);
+  border-radius: 100%;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  aspect-ratio: 1;
+  text-align: center;
+  
+}
+
+footer{
+  text-align: center;
+  box-shadow: -1px -3px 5px rgba(0, 0, 0, 0.09);
+  padding-top: 2px;
+  margin-top: auto;
+  background-image: url(../img/fondo.png);
+  font-size: 30px;
+}
+
+footer a{
+  text-decoration: underline;
+}
